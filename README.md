@@ -4,7 +4,7 @@
 ## Preparing Environment
 Clone the repo into your local environment 
 ```bash
-git clone
+git clone https://github.com/Kugelbrecher/IP-Proxy-Pool.git
 ```
 
 Create a virtual environment (assuming you have virtualenv installed)
