@@ -31,3 +31,7 @@ TEST_TIMEOUT = 10
 TEST_PROXIES_ASYNC_COUNT = 10
 # time interval for checking the proxy IP, in hours
 TEST_PROXIES_INTERVAL = 2
+
+# maximum number of proxy IPs obtained; 
+# the smaller this number, the higher the availability; but the randomness is worse
+PROXIES_MAX_COUNT = 0
