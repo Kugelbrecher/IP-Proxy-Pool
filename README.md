@@ -7,6 +7,10 @@ While a paid proxy IP provider with a robust interface and high stability may ne
 
 This project introduces a simple proxy pool designed to facilitate web scraping. It offers asynchronous proxy IP acquisition, verification, and storage capabilities. Additionally, it provides a web service interface for obtaining proxy IPs, ensuring a reliable and continuous supply of functional proxies.
 
+**Warning:**
+It is risky to use free proxies for web scraping tasks, as they may be unreliable or even malicious:
+- the user behavior may be monitored and recorded, the cookies may be stolen
+- the data you scrape may be tampered with, or you may be redirected to a phishing site
 
 ## Project Design
 
@@ -21,29 +25,29 @@ This project introduces a simple proxy pool designed to facilitate web scraping.
 
 ### Project Structure
 ```
--- Proxy-IP-Pool
-    -- core
-        -- db
-            -- __init__.py
-            -- mongo_pool.py
-        -- proxy_validate
-            -- __init__.py
-            -- httpbin_validator.py
-        -- proxy_spiders
-            -- __init__.py
-            -- base_spider.py
-            -- proxy_spiders.py
-            -- run_spiders.py
-        -- proxy_test.py
-        -- proxy_api.py
-    -- domain.py
-    -- utils
-        -- __init__.py
-        -- http.py
-        -- log.py
-    -- main.py
-    -- settings.py
-    -- requirements.txt
+|-- IP-Proxy-Pool
+    |-- core
+        |-- db
+            |-- __init__.py
+            |-- mongo_pool.py
+        |-- proxy_validate
+            |-- __init__.py
+            |-- httpbin_validator.py
+        |-- proxy_spiders
+            |-- __init__.py
+            |-- base_spider.py
+            |-- proxy_spiders.py
+            |-- run_spiders.py
+        |-- proxy_test.py
+        |-- proxy_api.py
+    |-- domain.py
+    |-- utils
+        |-- __init__.py
+        |-- http.py
+        |-- log.py
+    |-- main.py
+    |-- settings.py
+    |-- requirements.txt
 ```
 
 
