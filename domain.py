@@ -7,7 +7,7 @@ class Proxy(object):
         ip: IP address of the proxy.
         port: port number of the proxy.
         protocol: protocol type of the proxy (http->0, https->1, http&https->2).
-        nick_type (int, optional): anonymity level of the proxy (elite->0, anonymous->1, transparent->2).
+        nick_type: anonymity level of the proxy (elite->0, anonymous->1, transparent->2).
         speed: speed of the proxy, in seconds.
         area: geographical area of the proxy.
         score: score of the proxy for ranking purposes.

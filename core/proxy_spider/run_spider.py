@@ -38,7 +38,7 @@ class RunSpider(object):
         for spider in spiders:
             self.coroutine_pool.apply_async(self.__run_one_spider, args=(spider,))
         
-        # run all spiders asynchronously
+        # wait for all coroutines to finish
         self.coroutine_pool.join()
 
     def _auto_import_instances(self):
