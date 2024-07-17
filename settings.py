@@ -26,3 +26,8 @@ SPIDER_INTERVAL = 10
 
 # test proxy
 TEST_TIMEOUT = 10
+
+# number of asynchronous proxy IP detection
+TEST_PROXIES_ASYNC_COUNT = 10
+# time interval for checking the proxy IP, in hours
+TEST_PROXIES_INTERVAL = 2
