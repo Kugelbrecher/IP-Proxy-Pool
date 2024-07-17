@@ -135,6 +135,10 @@ class MongoPool(object):
                                       domain=domain, 
                                       count=count, 
                                       nick_type=nick_type)
+        
+        if not proxy_list:
+            return None
+        
         return random.choice(proxy_list)
     
     def disable_domain(self, ip, domain):
